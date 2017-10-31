@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{72C01CD2-156F-4A31-A821-E32418AAE9A3}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{DECC1965-9875-4230-A3F7-66D8B0BFC175}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>dublettenfinder.ui.tests</RootNamespace>
-    <AssemblyName>dublettenfinder.ui.tests</AssemblyName>
+    <RootNamespace>dublettenfinder.provider</RootNamespace>
+    <AssemblyName>dublettenfinder.provider</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -29,9 +29,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,14 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Prüfstand.cs" />
+    <Compile Include="DateiLeser.cs" />
+    <Compile Include="HashGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\dubletttenfinder.ui\dubletttenfinder.ui.csproj">
-      <Project>{a4d3e605-bd8e-402f-b7d5-939796231a2c}</Project>
-      <Name>dubletttenfinder.ui</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

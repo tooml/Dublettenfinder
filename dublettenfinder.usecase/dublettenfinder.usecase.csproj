@@ -41,6 +41,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UseCase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dublettenfinder.dublettenprüfung\dublettenfinder.dublettenprüfung.csproj">
+      <Project>{3e5f5b2d-d074-429c-a86e-4a42f2016a56}</Project>
+      <Name>dublettenfinder.dublettenprüfung</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dublettenfinder.provider\dublettenfinder.provider.csproj">
+      <Project>{decc1965-9875-4230-a3f7-66d8b0bfc175}</Project>
+      <Name>dublettenfinder.provider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dubletttenfinder.ui\dubletttenfinder.ui.csproj">
+      <Project>{a4d3e605-bd8e-402f-b7d5-939796231a2c}</Project>
+      <Name>dubletttenfinder.ui</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dubletttenfinder.ui;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,8 @@ namespace dublettenfinder.ui.tests
     {
         static void Main(string[] args)
         {
-            Console.Write("Hallo, Test");
-            Console.ReadKey();
+            var sut = new Ui();
+            sut.Ausgabe("Ausgabe Ergebnis");
         }
     }
 }

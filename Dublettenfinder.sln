@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dubletttenfinder.ui", "dubl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dublettenfinder.dublettenprüfung", "dublettenfinder.dublettenprüfung\dublettenfinder.dublettenprüfung.csproj", "{3E5F5B2D-D074-429C-A86E-4A42F2016A56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dublettenfinder.adapter", "dublettenfinder.adapter\dublettenfinder.adapter.csproj", "{D9FC550F-80E1-4D93-8A81-8B408805FF15}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dublettenfinder.dublettenprüfung.tests", "dublettenfinder.dublettenprüfung.tests\dublettenfinder.dublettenprüfung.tests.csproj", "{21DC9C03-49DF-4438-83A7-835D8B3591AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dublettenfinder.ui.tests", "dublettenfinder.ui.tests\dublettenfinder.ui.tests.csproj", "{72C01CD2-156F-4A31-A821-E32418AAE9A3}"
@@ -16,6 +14,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dublettenfinder.usecase", "dublettenfinder.usecase\dublettenfinder.usecase.csproj", "{626558FE-AAEE-4602-9517-34AA15D96AFB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dublettenfinder.usecase.tests", "dublettenfinder.usecase.tests\dublettenfinder.usecase.tests.csproj", "{AB2A6D39-801F-46AA-82AD-5EC58AA78A73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dublettenfinder.app", "dublettenfinder.app\dublettenfinder.app.csproj", "{80E69646-AF5B-480F-84E9-C71DCAB23DAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dublettenfinder.provider", "dublettenfinder.provider\dublettenfinder.provider.csproj", "{DECC1965-9875-4230-A3F7-66D8B0BFC175}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dublettenfinder.provider.tests", "dublettenfinder.provider.tests\dublettenfinder.provider.tests.csproj", "{9CD747F8-E3CB-4BE0-8E1A-4F7F2D29F29F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +35,6 @@ Global
 		{3E5F5B2D-D074-429C-A86E-4A42F2016A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E5F5B2D-D074-429C-A86E-4A42F2016A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E5F5B2D-D074-429C-A86E-4A42F2016A56}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D9FC550F-80E1-4D93-8A81-8B408805FF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9FC550F-80E1-4D93-8A81-8B408805FF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9FC550F-80E1-4D93-8A81-8B408805FF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9FC550F-80E1-4D93-8A81-8B408805FF15}.Release|Any CPU.Build.0 = Release|Any CPU
 		{21DC9C03-49DF-4438-83A7-835D8B3591AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{21DC9C03-49DF-4438-83A7-835D8B3591AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21DC9C03-49DF-4438-83A7-835D8B3591AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +51,18 @@ Global
 		{AB2A6D39-801F-46AA-82AD-5EC58AA78A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB2A6D39-801F-46AA-82AD-5EC58AA78A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB2A6D39-801F-46AA-82AD-5EC58AA78A73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80E69646-AF5B-480F-84E9-C71DCAB23DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E69646-AF5B-480F-84E9-C71DCAB23DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E69646-AF5B-480F-84E9-C71DCAB23DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E69646-AF5B-480F-84E9-C71DCAB23DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DECC1965-9875-4230-A3F7-66D8B0BFC175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DECC1965-9875-4230-A3F7-66D8B0BFC175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DECC1965-9875-4230-A3F7-66D8B0BFC175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DECC1965-9875-4230-A3F7-66D8B0BFC175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD747F8-E3CB-4BE0-8E1A-4F7F2D29F29F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD747F8-E3CB-4BE0-8E1A-4F7F2D29F29F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD747F8-E3CB-4BE0-8E1A-4F7F2D29F29F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD747F8-E3CB-4BE0-8E1A-4F7F2D29F29F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

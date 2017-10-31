@@ -49,9 +49,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UseCaseTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="testdateien\Datei_drei.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testdateien\Datei_eins.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testdateien\Datei_zwei.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dublettenfinder.dublettenprüfung\dublettenfinder.dublettenprüfung.csproj">
+      <Project>{3e5f5b2d-d074-429c-a86e-4a42f2016a56}</Project>
+      <Name>dublettenfinder.dublettenprüfung</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dublettenfinder.provider\dublettenfinder.provider.csproj">
+      <Project>{decc1965-9875-4230-a3f7-66d8b0bfc175}</Project>
+      <Name>dublettenfinder.provider</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dublettenfinder.usecase\dublettenfinder.usecase.csproj">
+      <Project>{626558fe-aaee-4602-9517-34aa15d96afb}</Project>
+      <Name>dublettenfinder.usecase</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace dubletttenfinder.ui
 {
-    public static class Program
+    public class Ui
     {
-        static void Main(string[] args)
+        public void Ausgabe(string text)
         {
-            Console.Write("Hallo");
+            Console.WriteLine(text);
             Console.ReadKey();
         }
     }
